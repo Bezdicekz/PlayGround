@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlayGround</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <h1>Můj PlayGround</h1>
+    <h1 id="prvni_nadpis">Můj PlayGround</h1>
     <h2>Aplikace pro organizaci úkolů</h2>
     <p><strong>Vytvoř</strong> si úkoly podle potřeby a <strong>zadej termín</strong> dokončení.</p>
     <h3>Seznam úkolů </h3>
@@ -38,8 +39,11 @@
     <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank
     ">HTML Atributy</a>
 
-    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank
-    ">HTML Atributy 2</a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank
+    ">CSS</a>
+
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes" target="_blank
+    ">CSS Pseudo třídy</a>
 
     <a href="./login.html" target="_blank
     ">Login</a>
@@ -117,8 +121,86 @@
         <label for="password">Heslo</label>
         <input id="password" type="password" name="password" required>
 
-        <button type="submit">Pčihlaš se</button>
+        <button type="submit">Přihlaš se</button>
     </form>
+    <form action="#" method="post">
+
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" required placeholder="example@email.com">
+
+        <label for="password">Heslo</label>
+        <input id="password" type="password" name="password" required>
+
+
+        <textarea id="bio" name="bio" rows="3">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam laborum ex numquam esse corrupti aut a voluptates doloremque libero quidem consectetur, odio reiciendis, amet dolor exercitationem voluptatem accusantium, qui molestiae.
+    </textarea>
+
+
+        <label for="subscription-length">Délka předplatného</label>
+        <select id="subscription-length" name="sub-length">
+            <option value="1">1 měsíc</option>
+            <option value="6">6 měsíců</option>
+            <option value="12">12 měsíců</option>
+            <option value="24" selected>24 měsíců</option>
+        </select>
+
+        <form action="#" method="post">
+            <label for="country">Stát sídla společnosti</label>
+            <select id="country" name="country">
+                <optgroup label="Evropa">
+                    <option value="cz">Česko</option>
+                    <option value="sk">Slovensko</option>
+                    <option value="au">Rakousko</option>
+                    <option value="de">Německo</option>
+                </optgroup>
+                <optgroup label="Amerika">
+                    <option value="us">USA</option>
+                    <option value="ca">Kanada</option>
+                </optgroup>
+                <optgroup label="Asie">
+                    <option value="jp">Japonsko</option>
+                    <option value="kr">Jiřní Korea</option>
+                    <option value="cn">Čína</option>
+                </optgroup>
+            </select>
+
+            <label for="name">Jméno</label>
+            <input id="name" type="text" name="name" required>
+
+            <label for="terms" class="checkbox-and-radio-label">
+                <input id="terms" type="checkbox" name="terms" required> Souhlasím s podmínkami použití aplikace
+            </label>
+
+            <fieldset>
+                <legend>Zvolte druh předplatného</legend>
+                <label for="basic-plan" class="checkbox-and-radio-label">
+                    <input id="basic-plan" type="radio" name="plan" value="basic" required> Základní předplatné
+                </label>
+                <label for="pro-plan" class="checkbox-and-radio-label">
+                    <input id="pro-plan" type="radio" name="plan" value="pro" required> Profesionální předplatné
+                </label>
+                <label for="custom-plan" class="checkbox-and-radio-label">
+                    <input id="custom-plan" type="radio" name="plan" value="premium" required> Předplatné na míru
+                </label>
+            </fieldset>
+
+            <label for="subscription-start">Začátek předplatného</label>
+            <input id="subscription-start" type="week" name="sub-start" required>
+
+            <label for="amount">Počet kusů</label>
+            <input id="amount" type="number" name="amount" min="1" max="10">
+
+
+            <input type="file" name="file" accept="image/*">
+
+            <input type="submit" value="Vytvořit účet">
+
+            <input type="hidden" name="_method" value="">
+
+            <button type="submit">Vytvoři účet buttonem</button>
+
+        </form>
 
 </body>
 </html>
