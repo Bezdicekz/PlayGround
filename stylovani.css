@@ -1,0 +1,81 @@
+
+:root {
+    --default-font-size: 16px;
+    --font-color: rgb(1, 67, 1);
+    --font-color-vedlejsi: rgb(1, 107, 1);
+    --font-color-tlačítko: rgb(225, 225, 225);
+    --barva-pozadí: rgb(182, 239, 182);
+    --barva-warning: rgb(176, 0, 0);
+    --barva-akce: green;
+    --zaobleni-rohu: 20px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: rgb(41, 41, 41);
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    color: var(--font-color);
+}
+
+p {
+    color: var(--font-color-vedlejsi);
+}
+
+button {
+    color: var(--font-color-tlačítko);
+    background-color: var(--barva-akce);
+}
+
+a {
+    color: blue;
+}
+
+.container-cards {
+    display:flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+.simple-card {
+    border: 2px solid var(--font-color-tlačítko);
+    padding: 5px;
+    width: 20rem;
+    max-width: 100%;
+    font-size: 1.15rem;
+    text-align: center;
+    h2 {
+        font-family: var(--heading-font-family);
+        
+    }
+        p:last-child {
+        text-align: right;
+    }
+    a {
+        text-decoration:
+        none;
+        font-weight: bold;
+        color:
+        var(--font-color);
+
+        &:hover {
+        text-decoration:
+        underline;
+    }
+    }
+    }

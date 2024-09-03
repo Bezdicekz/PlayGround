@@ -1,3 +1,24 @@
+:root {
+    --default-font-size: 16px;
+    --font-color: rgb(1, 67, 1);
+    --font-color-vedlejsi: rgb(1, 107, 1);
+    --zaobleni-rohu: 20px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+
 h1 {
     color: green;
 }
