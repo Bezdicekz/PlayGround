@@ -1,8 +1,8 @@
 
 :root {
     --default-font-size: 16px;
-    --font-color: rgb(1, 67, 1);
-    --font-color-vedlejsi: rgb(1, 107, 1);
+    --font-color: #014301;
+    --font-color-vedlejsi: #016b01;
     --font-color-tlačítko: rgb(225, 225, 225);
     --barva-pozadí: rgb(182, 239, 182);
     --barva-warning: rgb(176, 0, 0);
