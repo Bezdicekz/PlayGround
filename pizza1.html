@@ -1,48 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>La stada</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
-<body>
-    <header>
+<body class="bg-zinc-100 font-serif"">
+    <header class="w-full h-12 bg-gray-600 fixed w-full z-50">
 
     </header>
 
-    <main>
-        <img src="" alt="">
-        <div>
-            <h1>DENNÍ MENU, PIZZA A JINÉ DOBROTY</h1>
-            <button>více</button>
+    <main >
+        <div class="flex  w-full h-[80vh] bg-[url('./lastrada_pict/main_image.jpg')] bg-center bg-cover items-center" >
+            <div class="w-full text-center">
+            <h1 class="text-5xl">DENNÍ MENU, PIZZA A JINÉ DOBROTY</h1>
+            <button class="mt-5 text-2xl text-white rounded-lg px-12 py-2 border p-4 bg-amber-600">Více</button>
+            </div>
         </div>
     </main>
 
-    <section>
-        <h3>Restaurant La Strada Ostrava - Poruba</h3>
-        <ul>
-            <li><h4>VYHRAJTE VESPU</h4>
+    <section class="w-2/3 mx-auto text-center">
+        <h3 class="py-12 text-xl text-center">Restaurant La Strada Ostrava - Poruba</h3>
+        <ul class="grid grid-cols-4 gap-10 text-xs">
+            <li><h4 class="pb-6">VYHRAJTE VESPU</h4>
                 <p>Velká soutěž o fantastickou Vespu
                 Primavera 125cm3 ABS-4 takt a
                 další množství hodnotných cen
                 Do slosování budou zařazeny
                 účtenky ...</p>
             </li>
-            <li><h4>ČERSTVÉ SUROVINY</h4>
+            <li><h4 class="pb-6">ČERSTVÉ SUROVINY</h4>
                 <p>Pro výrobu všech pokrmů
                 používáme zásadně čerstvé
                 suroviny, z větší části dovezené
                 přímo ze zahraničí. Suroviny jako
                 těstoviny, noky a další ...</p>
             </li>
-            <li><h4>NAŠE MENU</h4>
+            <li><h4 class="pb-6">NAŠE MENU</h4>
                 <p>Nabízíme široký výběr z italské
                 kuchyně a obsáhlou nabídku alko a
                 nealko nápojů. Většina jídel vychází
                 z tradičních receptur severní Itálie.
                 Mimo ...</p>
             </li>
-            <li><h4>TAKE AWAY</h4>
+            <li><h4 class="pb-6">TAKE AWAY</h4>
                 <p>Nemáte čas navštívit naši
                 restauraci? Zavolejte na tel. +420
                 596 939 320. Rádi Vám připravíme
@@ -52,18 +55,22 @@
         </ul>
     </section>
 
-    <nav>
-        <a href="#"Denní menu>
-        <img src="#" alt="Obrázek denního menu">
+    <nav class="grid grid-cols-4 pt-12 h-96">
+        <a class="group flex justify-center items-center bg-[url('./lastrada_pict/45150-testoviny.jpg')] bg-center bg-cover relative" href="#">
+            <p class="text-2xl text-white underline z-10">Denní menu</p>
+            <div class="transition duration-700 ease-in-out h-full w-full bg-red-900 opacity-0 absolute top-0 group-hover:opacity-50"></div>
         </a>
-        <a href="#"Naše pizza>
-        <img src="#" alt="Obrázek pizzy">
+
+        <a class="flex justify-center items-center bg-[url('./lastrada_pict/45150-testoviny.jpg')] bg-center bg-cover" href="#">
+            <p class="text-2xl text-white underline">Denní menu</p>
         </a>
-        <a href="#"Oblíbené drinky>
-        <img src="#" alt="Obrázek drinky">
+
+        <a class="flex justify-center items-center bg-[url('./lastrada_pict/45150-testoviny.jpg')] bg-center bg-cover" href="#">
+            <p class="text-2xl text-white underline">Denní menu</p>
         </a>
-        <a href="#"Jídelní lístek>
-        <img src="#" alt="Obrázek hídelní lístek">
+
+        <a class="flex justify-center items-center bg-[url('./lastrada_pict/45150-testoviny.jpg')] bg-center bg-cover" href="#">
+            <p class="text-2xl text-white underline">Denní menu</p>
         </a>
     </nav>
 
