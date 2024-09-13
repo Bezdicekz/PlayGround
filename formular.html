@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formular</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <form action="#" name="prihlaseni" method="post">
+        <label for="email">Email</label>
+        <input id="email" value="zdenek.bezdicek@gmail.com" type="email" name="email" required>
+        <label for="heslo">Heslo</label>
+        <input id="heslo" type="password" name="heslo" required>
+        <input id="odesli" class="bg-amber-600 p-6" type="submit" value="Přihlásit se">
+    </form>
+
+    <div class="okno-presvse h-[100%] w-[100%] bg-amber-600 absolute top-0 left-0 items-center justify-center opacity-50">
+        
+        <h1 class="text-2xl z-10 opacity-100">Klikl jsi na tlačítko</h1>
+    </div>
+
+    <script src="formular.js"></script>
+</body>
+</html>

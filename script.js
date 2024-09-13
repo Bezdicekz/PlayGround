@@ -92,3 +92,50 @@ osoba.jemno = "Petr";
 
 console.log(osoba.jemno)
 
+let button = document.getElementById("btn");
+let textovapole = document.getElementsByTagName("p");
+let Odkazy = document.getElementsByTagName("a");
+let Odkazy1 = document.querySelector("p:first-child");
+
+
+
+console.log(button);
+console.log(textovapole);
+console.log(Odkazy);
+
+console.log(Odkazy[2]);
+console.log(Odkazy1[2]);
+
+// Práce s objektem pomocí JS 
+// Vyber objekt s ID poznamka-pod-carou 
+const poznamkaPodCarou = document.getElementById("poznamka-pod-carou");
+
+// skryjeme poznámku přepsáním CSS
+// Nastavíme display na none a tím text zmizí
+poznamkaPodCarou.style.display = "none"
+
+// změna barvy tlačítka
+console.log(button.style.backgroundColor = "gray"); 
+
+console.log(button.style);
+
+console.log(document.URL);
+
+
+// Ulož si do paměti element s třídou poznamka - [0] první element s touto třídou na stránce 
+const poznamka = document.getElementsByClassName("poznamka")[0];
+
+// Vyberu první element s označením main
+const hlavniObsah = document.getElementsByTagName("main")[0];
+
+// Vytvořím nový element
+const element = document.createElement("p");
+
+// pomocí vlastností nastavíme co je třeba
+element.classList.add("poznamka");
+
+// a tady je textový obsah, který vložím
+element.textContent = "Poznámka pod čarou.";
+
+// Nakonec nový element připojíme k hlavnímu obsahu
+hlavniObsah.append(element);
