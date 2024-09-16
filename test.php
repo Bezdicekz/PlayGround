@@ -20,7 +20,7 @@ function secti($a, $b) {
 }
 
 $result = secti(1, 2);
-echo $result;       
+echo $result;
 
 mojeFunkce();
 
